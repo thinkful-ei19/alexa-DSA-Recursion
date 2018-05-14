@@ -1,5 +1,7 @@
 'use strict';
 
+// 7. Factorial
+
 function factorial(num) {
   if (num === 1) {
     return 1;
