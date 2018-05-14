@@ -23,12 +23,12 @@ function reverse2(str) {
   if (str === '') {
     return '';
   }
-  
+    
   const newChar = str[0];
-  
+    
   return reverse2(str.slice(1)) + newChar;
 }
-  
+    
 const str = 'hello';
 reverse2(str);
   
