@@ -1,7 +1,5 @@
 'use strict';
 
-// 5. String Splitter
-
 //start from beginning
 // go to separator
 // return --> slice

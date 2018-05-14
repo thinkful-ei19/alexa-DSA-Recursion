@@ -1,7 +1,5 @@
 'use strict';
 
-// 6. Binary Representation
-
 function binary(num) {
   if (num === 0) {
     return '';

@@ -1,7 +1,5 @@
 'use strict';
 
-// 2. Array Double
-
 // first attempt
 
 // let arr2 = [];

@@ -1,7 +1,5 @@
 'use strict';
 
-// 1. Counting Sheep
-
 function sheepCounter(num) {
   if (num === 0) {
     return;

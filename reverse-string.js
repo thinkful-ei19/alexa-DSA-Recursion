@@ -1,6 +1,5 @@
 'use strict';
 
-// 3. Reverse String
 
 // my first solution
 
