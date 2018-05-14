@@ -23,6 +23,7 @@
 
 
 // second attempt
+
 function double(arr) {
   if (arr.length === 0) {
     return [];

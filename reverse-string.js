@@ -17,6 +17,7 @@ function reverse(str) {
   
 console.log(reverse('hello'));
 
+
 //second solution
 
 function reverse2(str) {
@@ -29,7 +30,5 @@ function reverse2(str) {
   return reverse2(str.slice(1)) + newChar;
 }
     
-const str = 'hello';
-reverse2(str);
-  
+console.log(reverse2('hello'));
   
