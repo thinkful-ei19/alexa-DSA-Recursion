@@ -21,16 +21,16 @@
 //second solution
 
 function reverse(str) {
-    if (str === '') {
-      return '';
-    }
-  
-    const newChar = str[0];
-  
-    return reverse(str.slice(1)) + newChar;
+  if (str === '') {
+    return '';
   }
   
-  const str = 'hello';
-  reverse(str);
+  const newChar = str[0];
+  
+  return reverse(str.slice(1)) + newChar;
+}
+  
+const str = 'hello';
+reverse(str);
   
   
