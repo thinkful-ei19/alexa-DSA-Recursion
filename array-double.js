@@ -24,19 +24,20 @@
 
 // second attempt
 
-// function double(arr) {
-//   if (arr.length === 0) {
-//     return [];
-//   }
+function double(arr) {
+  if (arr.length === 0) {
+    return [];
+  }
 
-//   const doubleNum = arr[0] * 2;
+  const doubleNum = arr[0] * 2;
   
-//   return [doubleNum, ...double(arr.slice(1))];
-// }
+  return [doubleNum, ...double(arr.slice(1))];
+}
 
 
-// let arr = [1, 2, 3];
-// console.log(double(arr));
+let arr = [1, 2, 3];
+console.log(double(arr));
+
 
 // Iterative Solution
 
@@ -51,5 +52,5 @@ function double2(array) {
   return doubledArray;
 }
 
-let arr = [1, 2, 3];
-console.log(double2(arr));
+let newArray = [1, 2, 3];
+console.log(double2(newArray));

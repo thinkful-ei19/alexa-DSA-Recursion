@@ -41,9 +41,9 @@
 //             Wes
 
 const chart = [
-  {id: 'Zuckerberg', owner: null},
-  {id: 'Schroepfer', owner: 'Zuckerberg'},
-  {id: 'Bosworth', owner:'Schroepfer' },
+  {id: 'Zuckerberg', owner: null}, // indent - 0
+  {id: 'Schroepfer', owner: 'Zuckerberg'}, // indent - 1
+  {id: 'Bosworth', owner:'Schroepfer' }, // indent - 2
   {id: 'Steve', owner: 'Bosworth'},
   {id: 'Kyle', owner: 'Bosworth'},
   {id: 'Andra', owner: 'Bosworth'},
@@ -70,9 +70,23 @@ function organize(chart, owner) {
   return node;
 }
 
+console.log(JSON.stringify(
+  organize(chart, null),
+  null, 2)
+);
+
 // console.log(JSON.stringify(
 //   organize(chart, null),
 //   null, 2)
+//   .replace(/[^A-Za-z0-9\s]/g,"").replace(/\s{2,}/g, " ")
 // );
 
-console.log(organize(chart, null));
+// console.log(organize(chart, null));
+
+// output of each recursive call
+//   node = {
+//     'Zuckerberg': {
+//       'Schroepfer': organize(chart, 'Schroepfer'),
+//        'Schrage': organize(chart, 'Schrage'),
+//     }
+//   };
